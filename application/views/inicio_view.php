@@ -7,7 +7,7 @@
 <body>
 	<div id=“container”>
 		<h1>Login</h1>
-		<form action="">
+		<?php echo form_open("inicio/login"); ?>
 			<label for="">Usuario:</label>
 			<input type="text" name="user" id="user">
 			<br>
@@ -15,7 +15,7 @@
 			<input type="password" name="pass" id="pass">
 			<br>
 			<input type="submit" value="Entrar">
-		</form>
+		<?php echo form_close(); ?>
 	</div>
 </body>
 </html>
